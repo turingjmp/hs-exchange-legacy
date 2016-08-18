@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'linnaen',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,7 +58,7 @@ WSGI_APPLICATION = 'linnaen.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'hs_exchange_test'
     }
 }

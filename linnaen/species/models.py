@@ -14,6 +14,7 @@ class Family(models.Model):
     def __unicode__(self):
         return self.name
 
+
 class Genus(models.Model):
     name = models.CharField(max_length=30)
     family = models.ForeignKey(Family)
